@@ -1,0 +1,117 @@
+/* Barra de navegación (Navbar) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Fondo azul oscuro */
+  padding: 10px 20px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espacio entre el toggle y el logo */
+}
+
+.logoButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoButton:hover {
+  background: none; /* Elimina el efecto de fondo al pasar el mouse */
+}
+
+.logo {
+  height: 2.5rem;
+  transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+.logo:hover {
+  transform: scale(1.02); /* Discreto cambio de tamaño al pasar el mouse */
+}
+
+.sidebarToggle {
+  position: absolute;
+  top: 1.5rem;
+  left: -1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.sidebarToggle:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.headerCenter {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.headerRight {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.headerLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 2%;
+  }
+  .logo {
+    height: 2rem;
+  }
+  .sidebarToggle {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .navLink, .headerLink {
+    font-size: 0.9rem;
+  }
+  .icon {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0A192F;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+/* Contenedor principal */
+.loginContainer {
+  background-color: #f0f4ff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón para regresar a la página principal */
+.homeButton {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a73e8;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+/* Encabezado del formulario */
+.header {
+  font-size: 1.5rem;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+}
+
+/* Campos de entrada */
+.loginInput {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Enlace de restablecimiento de contraseña */
+.resetPassword {
+  font-size: 0.9rem;
+  color: #1a73e8;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Botón de iniciar sesión */
+.loginButton {
+  background-color: #1a73e8;
+  color: #ffffff;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* Botón de iniciar sesión con Google */
+.googleButton {
+  background-color: #ffffff;
+  color: #1a202c;
+  padding: 0.8rem;
+  width: 93%;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.googleLogo {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Mensaje de estado de login */
+.loginMessage {
+  color: #e53e3e;
+  margin-top: 1rem;
+}
+
+/* Enlace de registro */
+.signupLink {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.signupLinkText {
+  color: #1a73e8;
+  text-decoration: underline;
+}

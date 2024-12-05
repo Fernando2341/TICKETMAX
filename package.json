@@ -1,0 +1,21 @@
+{
+  "name": "ticket_max",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@botpress/sdk": "^1.6.2",
+    "botpress": "^10.51.10",
+    "mongoose": "^8.8.2",
+    "react-router-dom": "^7.0.1",
+    "ticket_max": "file:",
+    "vite": "^6.0.1"
+  }
+}

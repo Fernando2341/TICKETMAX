@@ -1,0 +1,217 @@
+/* Estilo global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0A192F;
+  color: #FFFFFF; /* Contraste adecuado para el fondo oscuro */
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  color: #0D111A;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.close-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Barra lateral */
+.sidebar-toggle {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  font-size: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 0 4px 4px 0;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-content.collapsed {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel de imágenes */
+.carousel {
+  width: 100%;
+  height: 500px; /* Ajusta esta altura para modificar el tamaño vertical */
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #333; /* Fondo gris oscuro por si la imagen es más pequeña */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes llenen el espacio */
+  aspect-ratio: auto; /* Relación automática para evitar distorsión */
+}
+
+/* Sección de eventos */
+.events-title {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 4rem;
+}
+
+.event-grid img {
+  width: 80%; /* Ajustado el tamaño de las imágenes de los eventos */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Botones de redes sociales */
+.social-links {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.social-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Botón de chat flotante */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+.floating-chat-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-chat-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Accesibilidad */
+button:focus,
+input:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

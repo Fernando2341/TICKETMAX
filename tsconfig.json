@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",  // Para usar módulos ES
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./server",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "server/**/*.ts"  // Ruta de los archivos TS
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
